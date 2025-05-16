@@ -108,7 +108,7 @@ Add-Content -Path $logFile -Value "⚠️ Alerta de reinicialização ativado (a
 
 do {
     try {
-        msg * "ATENCAO: Atualizacoes instaladas. Por favor, conecte o carregador e reinicie seu computador para concluir a aplicacao dos patches de seguranca (Att. TI APPMAX)"
+        msg * "ATENCAO: Atualizacoes instaladas. Por favor, conecte o carregador e reinicie seu computador para concluir a aplicacao das atualizacoes de seguranca (Att. TI APPMAX)"
         Add-Content -Path $logFile -Value "🔔 Alerta enviado via msg.exe em: $(Get-Date)" -Encoding utf8
     } catch {
         Add-Content -Path $logFile -Value "❌ Erro ao exibir mensagem via msg.exe: $($_.Exception.Message)" -Encoding utf8
